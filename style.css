@@ -24,7 +24,7 @@
   max-width: 1184px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header__logo {
@@ -37,8 +37,10 @@
   border: none;
   font-size: 24px;
   line-height: 28px;
-  margin-left: auto;
   padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-left: 18px;
 }
 
 .lead {
@@ -46,6 +48,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding-bottom: 92px;
 }
 
 .lead__title {
@@ -79,4 +83,56 @@
   text-transform: uppercase;
   font-size: 10px;
   line-height: 14px;
+}
+
+.img {
+  position: absolute;
+  z-index: 1;
+  top: 45.5%;
+}
+
+.intro {
+  max-width: 690px;
+  margin: 0 auto;
+  padding-right: 294px;
+  padding-bottom: 92px;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.intro__text {
+  line-height: 1.63;
+  margin: 0;
+  padding-bottom: 33px;
+}
+
+.itnro__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.intro__list-accent {
+  font-weight: 400;
+}
+
+.photo-grid {
+  margin: 0 auto;
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.photo-grid__item {
+  width: 100%;
 }
