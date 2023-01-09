@@ -5,6 +5,15 @@
   src: local("Inter"), url("./fonts/Inter-Regular.woff2") format("woff2"),
     url("./fonts/Inter-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Inter"), url("./fonts/Inter-Bold.woff2") format("woff2"),
+    url("./fonts/Inter-Bold.woff") format("woff");
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -31,6 +40,7 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
   background-color: #2a2c2f;
   color: white;
+  padding: 0 48px;
 }
 
 .header {
@@ -70,6 +80,7 @@
   align-items: center;
   position: relative;
   padding-bottom: 92px;
+  margin: 0 auto;
 }
 
 .lead__title {
@@ -92,23 +103,22 @@
   padding-bottom: 64px;
 }
 
+.lead__figure {
+  margin: 0;
+}
+
 .lead__image {
   margin: 0;
   max-width: 984px;
+  object-fit: cover;
 }
 
 .lead__caption {
-  padding-top: 8px;
+  padding-top: 5px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 10px;
   line-height: 14px;
-}
-
-.img {
-  position: absolute;
-  z-index: 1;
-  top: 45.5%;
 }
 
 .intro {
@@ -132,7 +142,7 @@
   padding-bottom: 33px;
 }
 
-.itnro__list {
+.intro__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -156,6 +166,7 @@
 
 .photo-grid__item {
   width: 100%;
+  object-fit: fill;
 }
 
 .places {
@@ -164,7 +175,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 80px;
-  padding-bottom: 92px;
+  padding-bottom: 80px;
 }
 
 .place {
@@ -184,7 +195,7 @@
 }
 
 .place__image {
-  width: 100%;
+  max-width: 460px;
   object-fit: cover;
 }
 
@@ -243,6 +254,7 @@
   min-height: 740px;
   background-image: url(./images/cover-trains.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .cover__link::before {
@@ -287,7 +299,7 @@
 }
 .footer__navigation {
 }
-.foorer__navigation-list {
+.footer__navigation-list {
   display: flex;
   list-style: none;
   column-gap: 18px;
