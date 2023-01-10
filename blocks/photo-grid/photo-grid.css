@@ -18,3 +18,10 @@
     padding-bottom: 88px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .photo-grid {
+    row-gap: 12px;
+    padding: 0 16px 64px 16px;
+  }
+}

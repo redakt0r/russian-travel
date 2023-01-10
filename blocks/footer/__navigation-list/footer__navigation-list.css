@@ -5,3 +5,10 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 730px) {
+  .footer__navigation-list {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+}
