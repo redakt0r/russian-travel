@@ -47,3 +47,9 @@
     row-gap: 16px;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .cover__link {
+    background-image: url(../../../images/cover-trains-small.jpg);
+  }
+}
